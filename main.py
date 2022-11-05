@@ -15,9 +15,11 @@ def show_screen_create_account():
     # 'render_template': use the file as the UI/frontend of the app
     return render_template('create_account.html')
 
+
 @app.route("/login", methods=['GET', 'POST'])
 def show_screen_login():
     return render_template('login.html')
+
 
 @app.route("/homepage", methods=['GET', 'POST'])
 def show_screen_homepage():
@@ -25,4 +27,4 @@ def show_screen_homepage():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000, host='0.0.0.0')
+    app.run(debug=True, port=5000, host='localhost')
